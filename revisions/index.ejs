@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Revisions Première</title>
+    <meta
+      name="description"
+      content="Le site pour retrouver des fiches de révisions n'importe où :D"
+    />
+  </head>
+  <body>
+    <noscript>Impossible d'utiliser ce site sans JavaScript.</noscript>
+    <div class="separator">
+      <div class="sidebar" id="sidebar">
+        <div class="parent">
+          <button class="child" onclick="change(0)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2Ffree-home-icon-189-thumb.png?v=1600536429967"
+            />
+          </button>
+          <button class="child" onclick="change(1)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2FCircle-icons-calculator.svg%20(1).png?v=1600536382953"
+            />
+          </button>
+          <button class="child" onclick="change(2)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2Ficone-ordinateur.png?v=1600536472983"
+            />
+          </button>
+          <button class="child" onclick="change(3)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2Fdesign%2Bdevelopment%2Bfacebook%2Bframework%2Bmobile%2Breact%2Bicon-1320165723839064798.png?v=1600536536071"
+            />
+          </button>
+          <button class="child" onclick="change(4)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2F1377975.png?v=1600536560053"
+            />
+          </button>
+          <button class="child" onclick="change(5)">
+            <img
+              src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2F271554_preview.png?v=1600534824774"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="maincontent" id="maincontent">
+        <div id="zero">
+          <h1 class="title">
+            Fiches de révisions
+          </h1>
+          <p class="para">
+            Bonjour, ici tu trouveras toute les fiches de révisions sur
+            l'ensemble des matières suivantes : MATHS, NSI, PHYSIQUE-CHIMIE,
+            ANGLAIS.
+          </p>
+        </div>
+
+        <div id="one">
+          <h1 class="title">
+            Mathématiques
+          </h1>
+          <p class="para">
+            <%= `${maths.length} sujets` %>
+          </p>
+<% for (let i = 0; i<maths.length;i++) { %>
+          <button onclick="sch('<%= maths[i].content %>')"> 
+          <div class="card">
+       <%- i+1 %>.   <%= maths[i].title %></div>
+          <% } %>
+        </div>
+          </button>
+
+        <div id="two">
+          <h1 class="title">
+            NSI
+          </h1>
+          <p class="para">
+             <%= `${nsi.length} sujets` %>
+          </p>
+<% for (let i = 0; i<nsi.length;i++) { %>
+          <button onclick="sch('<%= nsi[i].content %>')"> 
+          <div class="card">
+        <%- i+1 %>. <%=  nsi[i].title %></div>
+          <% } %>
+        </div>
+          </button>
+
+        <div id="three">
+          <h1 class="title">
+            Physique-Chimie
+          </h1>
+          <p class="para">
+             <%= `${pc.length} sujets` %>
+          </p>
+           
+<% for (let i = 0; i<pc.length;i++) { %>
+           <button onclick="sch('<%= pc[i].content %>')"> 
+          <div class="card">
+       <%- i+1 %>.   <%= pc[i].title %></div>
+          <% } %>
+        </div>
+          </button>
+        <div id="four">
+          <h1 class="title">
+            Anglais
+          </h1>
+          <p class="para">
+             <%= `${anglais.length} sujets` %>
+          </p>
+<% for (let i = 0; i<anglais.length;i++) { %>
+          <button onclick="sch('<%= anglais[i].content %>')"> 
+          <div class="card">
+       <%- i+1 %>.   <%= anglais[i].title %></div>
+          <% } %>
+        </div>
+          </button>
+
+        <div id="five">
+          <h1 class="title">
+            Ajouter une fiche
+          </h1>
+          <p class="para">
+            Ici tu peux ajouter ta propre fiche automatiquement via ce
+            formulaire.
+          </p>
+
+          <form method="post" action="/request">
+            <label>Auteur</label>
+            <input type="text" name="author" placeholder="Aman" />
+            <label>Titre</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Les fonctions polinomes du second degré"
+            />
+            <label>Contenu</label>
+            <textarea name="content" placeholder="Contenu de test">
+            
+            </textarea>
+            <label>Matière</label>
+
+            <select name="type">
+              <option>Mathématiques</option>
+              <option>Physique-Chimie</option>
+              <option>NSI</option>
+              <option>Anglais</option>
+            </select>
+
+            <input type="submit" value="Poster" style="line-height: 0px;"/>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="grosdiv">
+      <button onclick="foo()">
+     <img src="https://cdn.glitch.com/ebf42836-90db-41ca-adf5-2119d87f3473%2F1200px-Flat_cross_icon.svg.png?v=1600534804562" class="cross" />
+      </button>
+      <p id="texte">
+        
+      </p>
+    </div>
+<script>
+    
+    
+    
+    function sch(texte) {
+      
+      document.getElementById("texte").innerHTML = texte
+       document.getElementById("grosdiv").style.display = "block"
+    }
+  function foo() {
+    document.getElementById("grosdiv").style.display = "none"
+  }
+    
+    
+    
+    
+    
+    </script>
+    <script>
+      function change(x) {
+        if (x == 0) {
+          document.getElementById("zero").style.display = "block";
+          document.getElementById("one").style.display = "none";
+
+          document.getElementById("two").style.display = "none";
+          document.getElementById("three").style.display = "none";
+          document.getElementById("four").style.display = "none";
+          document.getElementById("five").style.display = "none";
+        } else if (x == 1) {
+          document.getElementById("zero").style.display = "none";
+          document.getElementById("one").style.display = "block";
+
+          document.getElementById("two").style.display = "none";
+          document.getElementById("three").style.display = "none";
+          document.getElementById("four").style.display = "none";
+          document.getElementById("five").style.display = "none";
+        } else if (x == 2) {
+          document.getElementById("zero").style.display = "none";
+          document.getElementById("one").style.display = "none";
+
+          document.getElementById("two").style.display = "block";
+          document.getElementById("three").style.display = "none";
+          document.getElementById("four").style.display = "none";
+          document.getElementById("five").style.display = "none";
+        } else if (x == 3) {
+          document.getElementById("zero").style.display = "none";
+          document.getElementById("one").style.display = "none";
+
+          document.getElementById("two").style.display = "none";
+          document.getElementById("three").style.display = "block";
+          document.getElementById("four").style.display = "none";
+          document.getElementById("five").style.display = "none";
+        } else if (x == 4) {
+          document.getElementById("zero").style.display = "none";
+          document.getElementById("one").style.display = "none";
+
+          document.getElementById("two").style.display = "none";
+          document.getElementById("three").style.display = "none";
+          document.getElementById("four").style.display = "block";
+          document.getElementById("five").style.display = "none";
+        } else if (x == 5) {
+          document.getElementById("zero").style.display = "none";
+          document.getElementById("one").style.display = "none";
+
+          document.getElementById("two").style.display = "none";
+          document.getElementById("three").style.display = "none";
+          document.getElementById("four").style.display = "none";
+          document.getElementById("five").style.display = "block";
+        }
+      }
+
+      function myFunction(x) {
+        if (x.matches) {
+         
+          document.getElementById("sidebar").style.width = "100px";
+
+        } else {
+          document.getElementById("sidebar").style.width = "150px";
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 700px)");
+      myFunction(x);
+      x.addListener(myFunction);
+    </script>
+  </body>
+</html>
