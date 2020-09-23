@@ -16,7 +16,7 @@ res= StringVar()
 entree = Entry(root, width=100)
 def callback():
     entree.delete(0, END)
-    entree.insert(0, tab[random.randint(0, len(tab))])
+    entree.insert(0, tab[random.randint(0, len(tab))-1])
     
     
 btn = Button(root, text="Généré", width=25, height=2, command=callback)
