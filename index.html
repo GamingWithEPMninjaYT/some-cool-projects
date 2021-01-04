@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ZTracker | Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+    <meta property="og:title" content="Tracker OOT Randomizer" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>ZTracker</header>
+
+  <main>
+    <div class="parent">
+      <div class="child">
+        <div class="enfant">
+          <iframe
+            src=""
+            frameborder="0"
+            allowfullscreen="true"
+            scrolling="no"
+            height="378"
+            width="620"
+            id="player"
+            placeholder="Nothing"
+          >
+          </iframe>
+        </div>
+
+        <div class="enfant">
+          <div class="petit">
+            <div class="inventory">
+              <div class="inv_row">
+                <div class="real_row">
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Kokiri_Sword_Icon.png?v=1609366726453"
+                  />
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Master_Sword_Icon.png?v=1609366726278"
+                  />
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Giant%2527s_Knife_Icon.png?v=1609366726620"
+                  />
+                </div>
+              </div>
+              <div class="inv_row">
+                <div class="real_row">
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Deku_Shield_Icon.png?v=1609366726411"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Hylian_Shield_Icon.png?v=1609366726858"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Mirror_Shield_Icon.png?v=1609366726881"
+                  />
+                </div>
+              </div>
+              <div class="inv_row">
+                <div class="real_row">
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Kokiri_Tunic_Icon.png?v=1609366726278"
+                    style="opacity: 1;"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Goron_Tunic_Icon.png?v=1609366726278"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Zora_Tunic_Icon.png?v=1609366726278"
+                  />
+                </div>
+              </div>
+              <div class="inv_row">
+                <div class="real_row">
+                  <img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Kokiri_Boots_Icon.png?v=1609366726648"
+                    style="opacity: 1;"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Iron_Boots_Icon.png?v=1609366726387"
+                  /><img
+                    class="inv_item"
+                    src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Hover_Boots_Icon.png?v=1609279336630"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="petit">
+            <div class="form">
+              <input
+                placeholder="Lien d'intégration twitch"
+                style="border:none;outline:none;border-radius:0.9771986970684039vw;padding: 0.6514657980456026vw;margin-bottom: 1.6286644951140066vw;"
+                id="in"
+              />
+              <button
+                onclick="func()"
+                style="border:none;outline:none;background:black;color:white;padding: 0.6514657980456026vw;border-top-left-radius:  0.6514657980456026vw;border-bottom-right-radius: 0.6514657980456026vw;margin-bottom:  0.6514657980456026vw;"
+              >
+                Click
+              </button>
+              <textarea placeholder="Your notes goes there"></textarea>
+            </div>
+
+            <p id="timer"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="child">
+        <!-- Case 4 -->
+
+        <div class="c4_top">
+          <div class="c4_left">
+            <div class="item-row">
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Deku_Stick_Icon.png?v=1609278604415"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Deku_Nut_Icon.png?v=1609279087127"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bomb_Icon.png?v=1609279336630"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Fairy_Bow_Icon.png?v=1609279324399"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Fire_Arrow_Icon.png?v=1609279459006"
+              /><!--red arrow -->
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Din%2527s_Fire_Icon.png?v=1609279503861"
+              />
+            </div>
+            <div class="item-row">
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Fairy_Slingshot_Icon.png?v=1609279348339"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Fairy_Ocarina_Icon.png?v=1609279324505"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bombchu_Icon.png?v=1609279347588"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Hookshot_Icon.png?v=1609279352740"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Ice_Arrow_Icon.png?v=1609279336918"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Farore%2527s_Wind_Icon.png?v=1609279503630"
+              />
+            </div>
+            <div class="item-row">
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Boomerang_Icon.png?v=1609279347810"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Lens_of_Truth_Icon.png?v=1609346135382"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Megaton_Hammer_Icon.png?v=1609346139836"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Magic_Bean_Icon.png?v=1609346209073"
+              />
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Light_Arrow_Icon.png?v=1609279464235"
+              />
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Nayru%2527s_Love_Icon.png?v=1609279324726"
+              />
+            </div>
+            <div class="item-row">
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bottle_Icon.png?v=1609346504433"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bottle_Icon.png?v=1609346504433"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bottle_Icon.png?v=1609346504433"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bottle_Icon.png?v=1609346504433"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Weird_Egg_Icon.png?v=1609346546004"
+              />
+
+              <img
+                class="item"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Weird_Egg_Icon.png?v=1609346546004"
+              />
+            </div>
+            
+            
+          <div class="stones">
+            <img src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Spiritual_Stone_of_the_Forest_Icon.png?v=1609441798188" class="stone" />
+             <img src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Spiritual_Stone_of_Fire_Icon.png?v=1609441798189" class="stone" />
+             <img src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Spiritual_Stone_of_Water_Icon.png?v=1609441798189" class="stone" />
+            </div>
+          </div>
+          <div class="c4_right">
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FGreen_Note.png?v=1609279558818"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FRed_Note.png?v=1609357148816"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FYellow_Note.png?v=1609357146712"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FGrey_Note.png?v=1609357145671"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FPurple_Note.png?v=1609357150249"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOrange_Note.png?v=1609357153235"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FFlat%2527s_emblem.png?v=1609357216361"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FSharp%2527s_emblem.png?v=1609357223688"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Ocarina_of_Time_Icon.png?v=1609357331646"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2Fhorse.png?v=1609357484705"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT3D_Saria_Model.png?v=1609357525941"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FGuru-Guru_(angry).png?v=1609357599503"
+              /><span>.</span>
+            </div>
+            <div class="f">
+              <img
+                class="chant"
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Bonooru_Model.png?v=1609357648583"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="c4_bottom">
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Light_Medallion_Light_Barrier.png?v=1609348408986"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Forest_Medallion_Forest_Barrier.png?v=1609348387787"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Fire_Medallion_Fire_Barrier.png?v=1609348387787"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Water_Medallion_Water_Barrier.png?v=1609348391899"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Spirit_Medallion_Spirit_Barrier.png?v=1609348392131"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+          <div class="e">
+            <img
+              class="medaillon"
+              src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Shadow_Medallion_Shadow_Barrier.png?v=1609348392028"
+            />
+            <div class="fl">
+              <img
+                src="https://cdn.glitch.com/924b42b1-1572-4314-bff1-07623508f91e%2FOoT_Small_Key_Render.png?v=1609349206866"
+                class="key"
+              />
+              <input type="text" class="count" placeholder="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let elem = document.getElementById("timer");
+      let secondes = 0;
+
+      function scrapper(x, y, z) {
+        return `${x}:${y}:${z}`;
+      }
+      let h = 0;
+      let m = 0;
+      let s = 0;
+      elem.innerHTML = scrapper(h, m, s);
+      setInterval(() => {
+        elem.innerHTML = scrapper(h, m, s);
+
+        s += 1;
+
+        if (s == 60) {
+          s = 0;
+          m += 1;
+        }
+        if (m == 60) {
+          m = 0;
+          h += 1;
+        }
+      }, 1000);
+
+      let item = document.getElementsByClassName("item");
+
+      for (let i = 0; i <= item.length - 1; i++) {
+        let j = [];
+        for (let x = 0; x <= item.length; x++) {
+          j.push("1");
+        }
+
+        item[i].addEventListener("click", () => {
+          if (j[i] == "1") {
+            item[i].style.opacity = "1";
+            j[i] = "0";
+          } else {
+            item[i].style.opacity = "0.4";
+            j[i] = "1";
+          }
+        });
+      }
+
+      let chant = document.getElementsByClassName("chant");
+
+      for (let i = 0; i <= chant.length - 1; i++) {
+        let q = [];
+        for (let x = 0; x <= chant.length; x++) {
+          q.push("1");
+        }
+
+        chant[i].addEventListener("click", () => {
+          if (q[i] == "1") {
+            chant[i].style.opacity = "1";
+            q[i] = "0";
+          } else {
+            chant[i].style.opacity = "0.4";
+            q[i] = "1";
+          }
+        });
+      }
+
+      let inv = document.getElementsByClassName("inv_item");
+
+      for (let i = 0; i <= inv.length - 1; i++) {
+        let w = [];
+        for (let x = 0; x <= inv.length; x++) {
+          w.push("1");
+        }
+
+        inv[i].addEventListener("click", () => {
+          if (w[i] == "1") {
+            inv[i].style.opacity = "1";
+            w[i] = "0";
+          } else {
+            inv[i].style.opacity = "0.4";
+            w[i] = "1";
+          }
+        });
+      }
+
+      let meda = document.getElementsByClassName("medaillon");
+
+      for (let i = 0; i <= meda.length - 1; i++) {
+        let s = [];
+        for (let x = 0; x <= meda.length; x++) {
+          s.push("1");
+        }
+
+        meda[i].addEventListener("click", () => {
+          if (s[i] == "1") {
+            meda[i].style.opacity = "1";
+            s[i] = "0";
+          } else {
+            meda[i].style.opacity = "0.4";
+            s[i] = "1";
+          }
+        });
+      }
+      
+      
+      let sto = document.getElementsByClassName("stone");
+
+      for (let i = 0; i <= sto.length - 1; i++) {
+        let d = [];
+        for (let x = 0; x <= sto.length; x++) {
+          d.push("1");
+        }
+
+        sto[i].addEventListener("click", () => {
+          if (d[i] == "1") {
+            sto[i].style.opacity = "1";
+            d[i] = "0";
+          } else {
+            sto[i].style.opacity = "0.4";
+            d[i] = "1";
+          }
+        });
+      }
+      function func() {
+        let input = document.getElementById("in");
+        let value = input.value;
+
+        document.getElementById("player").setAttribute("src", value);
+      }
+    </script>
+  </main>
+
+  <footer></footer>
+</html>

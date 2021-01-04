@@ -1,0 +1,22 @@
+{
+  "name": "ZTracker",
+  "version": "1.1.0",
+  "description": "A cool tracker for OOT Randomizer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-packager . --platform=win32 --arch=x64 myApplicationBuilt"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-packager": "^15.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-winstaller": "^4.0.1",
+    "path": "^0.12.7"
+  }
+}
